@@ -1,0 +1,1312 @@
+{
+  "records": [
+    {
+      "rank": 1,
+      "slug": "mori",
+      "name": "森 凪也",
+      "record": "13:14.18",
+      "team": "Honda",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 2,
+      "slug": "yamaguchi-tomoki",
+      "name": "山口 智規",
+      "record": "13:16.38",
+      "team": "SGホールディングス",
+      "venue": "金栗記念",
+      "date": "2026/04/11",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 3,
+      "slug": "shiojiri",
+      "name": "塩尻 和也",
+      "record": "13:18.16",
+      "team": "富士通",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 4,
+      "slug": "tameike",
+      "name": "溜池 一太",
+      "record": "13:19.24",
+      "team": "SGホールディングス",
+      "venue": "LAトラックフェスティバル",
+      "date": "2026/05/23",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 5,
+      "slug": "okada",
+      "name": "岡田 開成",
+      "record": "13:19.44",
+      "team": "中央大学",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 6,
+      "slug": "masuko",
+      "name": "増子 陽太",
+      "record": "13:20.35",
+      "team": "早稲田大学",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 7,
+      "slug": "suzuki-ryuin",
+      "name": "鈴木 琉胤",
+      "record": "13:20.64",
+      "team": "早稲田大学",
+      "venue": "金栗記念",
+      "date": "2026/04/11",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 8,
+      "slug": "kurimura",
+      "name": "栗村 凌",
+      "record": "13:21.99",
+      "team": "中央大学",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 9,
+      "slug": "shibata",
+      "name": "柴田 侑",
+      "record": "13:22.46",
+      "team": "城西大学",
+      "venue": "日体大記録会",
+      "date": "2026/04/12",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 10,
+      "slug": "masuko",
+      "name": "増子 陽太",
+      "record": "13:22.87",
+      "team": "早稲田大学",
+      "venue": "金栗記念",
+      "date": "2026/04/11",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 11,
+      "slug": "yoshii",
+      "name": "吉居 大和",
+      "record": "13:23.92",
+      "team": "トヨタ自動車",
+      "venue": "金栗記念",
+      "date": "2026/04/11",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 12,
+      "slug": "aizawa",
+      "name": "相澤 晃",
+      "record": "13:24.97",
+      "team": "旭化成",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 13,
+      "slug": "tameike",
+      "name": "溜池 一太",
+      "record": "13:26.87",
+      "team": "SGホールディングス",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 14,
+      "slug": "igawa",
+      "name": "井川 龍人",
+      "record": "13:27.82",
+      "team": "旭化成",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 15,
+      "slug": "nonaka",
+      "name": "野中 恒亨",
+      "record": "13:28.47",
+      "team": "國學院大学",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 16,
+      "slug": "miyake",
+      "name": "三宅 悠斗",
+      "record": "13:28.66",
+      "team": "中央大学",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 17,
+      "slug": "fujita",
+      "name": "藤田 大智",
+      "record": "13:28.93",
+      "team": "中央大学",
+      "venue": "金栗記念",
+      "date": "2026/04/11",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 18,
+      "slug": "koike",
+      "name": "小池 莉希",
+      "record": "13:29.09",
+      "team": "創価大学",
+      "venue": "金栗記念",
+      "date": "2026/04/11",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 19,
+      "slug": "iyoda",
+      "name": "伊豫田 達弥",
+      "record": "13:29.64",
+      "team": "富士通",
+      "venue": "金栗記念",
+      "date": "2026/04/11",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 20,
+      "slug": "yamaguchi-shumpei",
+      "name": "山口 竣平",
+      "record": "13:29.72",
+      "team": "早稲田大学",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 21,
+      "slug": "ikeda-yohei",
+      "name": "池田 耀平",
+      "record": "13:29.82",
+      "team": "花王",
+      "venue": "ゴールデンゲームズ in のべおか",
+      "date": "2026/05/04",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 22,
+      "slug": "nakano-shota",
+      "name": "中野 翔太",
+      "record": "13:29.88",
+      "team": "Honda",
+      "venue": "織田記念",
+      "date": "2026/04/29",
+      "groupId": "season-5000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 1,
+      "slug": "suzuki",
+      "name": "鈴木 芽吹",
+      "record": "27:20.11",
+      "team": "トヨタ自動車",
+      "venue": "木南道孝記念",
+      "date": "2026/05/10",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 2,
+      "slug": "kameda",
+      "name": "亀田 仁一路",
+      "record": "27:40.41",
+      "team": "旭化成",
+      "venue": "木南道孝記念",
+      "date": "2026/05/10",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 3,
+      "slug": "koike",
+      "name": "小池 莉希",
+      "record": "27:52.43",
+      "team": "創価大学",
+      "venue": "関東インカレ",
+      "date": "2026/05/21",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 4,
+      "slug": "nishizawa",
+      "name": "西澤 侑真",
+      "record": "27:56.13",
+      "team": "トヨタ紡織",
+      "venue": "木南道孝記念",
+      "date": "2026/05/10",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 5,
+      "slug": "kusuoka",
+      "name": "楠岡 由浩",
+      "record": "27:58.40",
+      "team": "帝京大学",
+      "venue": "関東インカレ",
+      "date": "2026/05/21",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 6,
+      "slug": "ichida",
+      "name": "市田 孝",
+      "record": "27:59.10",
+      "team": "旭化成",
+      "venue": "九州実業団選手権",
+      "date": "2026/05/23",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 7,
+      "slug": "yamaguchi-shumpei",
+      "name": "山口 竣平",
+      "record": "27:59.47",
+      "team": "早稲田大学",
+      "venue": "早稲田大学競技会",
+      "date": "2026/04/24",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 8,
+      "slug": "kobayashi",
+      "name": "小林 歩",
+      "record": "27:59.64",
+      "team": "SUBARU",
+      "venue": "木南道孝記念",
+      "date": "2026/05/10",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 9,
+      "slug": "takaishi",
+      "name": "髙石 樹",
+      "record": "28:01.47",
+      "team": "國學院大学",
+      "venue": "関東インカレ",
+      "date": "2026/05/21",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 10,
+      "slug": "aizawa",
+      "name": "相澤 晃",
+      "record": "28:01.73",
+      "team": "旭化成",
+      "venue": "九州実業団選手権",
+      "date": "2026/05/23",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 11,
+      "slug": "fujita",
+      "name": "藤田 大智",
+      "record": "28:04.61",
+      "team": "中央大学",
+      "venue": "木南道孝記念",
+      "date": "2026/05/10",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 12,
+      "slug": "shibata",
+      "name": "柴田 侑",
+      "record": "28:05.07",
+      "team": "城西大学",
+      "venue": "レモンガススタジアム平塚",
+      "date": "2026/05/04",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 13,
+      "slug": "hanyu",
+      "name": "羽生 拓矢",
+      "record": "28:07.55",
+      "team": "トヨタ紡織",
+      "venue": "木南道孝記念",
+      "date": "2026/05/10",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 14,
+      "slug": "kuwata",
+      "name": "桑田 駿介",
+      "record": "28:07.63",
+      "team": "駒澤大学",
+      "venue": "関東インカレ",
+      "date": "2026/05/21",
+      "groupId": "season-10000",
+      "note": "",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    },
+    {
+      "rank": 15,
+      "slug": "okahara",
+      "name": "Hitoshi OKAHARA",
+      "record": "28:09.86",
+      "team": "JPN",
+      "venue": "日体大記録会",
+      "date": "2026/04/25",
+      "note": "漢字未確認",
+      "groupId": "season-10000",
+      "sourceUrl": "",
+      "sourceName": "",
+      "verifiedAt": "",
+      "verificationStatus": "unverified"
+    }
+  ],
+  "playerProfiles": [
+    {
+      "slug": "osako",
+      "name": "大迫 傑",
+      "team": "Li-Ning",
+      "record5000m": "13:08.40",
+      "record5000mDate": "2015/07/18",
+      "record10000m": "27:36.93",
+      "record10000mDate": "2020/12/04",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2007年〜2010年",
+          "name": "佐久長聖高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "2010年〜2014年",
+          "name": "早稲田大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2013年〜2025年",
+          "name": "Nike"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2025年〜現在",
+          "name": "Li-Ning"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "13:58.66",
+          "record10000m": "28:57.00",
+          "note": "佐久長聖高時代の記録。"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "13:20.80",
+          "record10000m": "27:38.31",
+          "note": "早稲田大学時代の10000m記録。"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "13:08.40",
+          "record10000m": "27:36.93",
+          "note": "自己ベストとして整理。"
+        }
+      ]
+    },
+    {
+      "slug": "sato",
+      "name": "佐藤 圭汰",
+      "team": "駒澤大学",
+      "record5000m": "13:09.45",
+      "record5000mDate": "2024/01/26",
+      "record10000m": "27:28.31",
+      "record10000mDate": "2023/11/25",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2019年〜2022年",
+          "name": "洛南高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "2022年〜2026年",
+          "name": "駒澤大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2026年～現在",
+          "name": "ナイキ・スウッシュTC"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "13:31.19",
+          "record10000m": "-",
+          "note": "当時高校日本記録。"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "13:09.45",
+          "record10000m": "27:28.50",
+          "note": "5000mは日本歴代2位.10000mは当時U20日本新記録"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "-",
+          "record10000m": "-",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "slug": "endo",
+      "name": "遠藤 日向",
+      "team": "住友電工",
+      "record5000m": "13:10.69",
+      "record5000mDate": "2022/05/04",
+      "record10000m": "27:59.08",
+      "record10000mDate": "2025/11/22",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2014年〜2017年",
+          "name": "学法石川高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "-",
+          "name": "-"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2017年〜現在",
+          "name": "住友電工"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "13:48.53",
+          "record10000m": "-",
+          "note": ""
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "-",
+          "record10000m": "-",
+          "note": ""
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "13:10.69",
+          "record10000m": "27:59.08",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "slug": "yoroizaka",
+      "name": "鎧坂 哲哉",
+      "team": "旭化成",
+      "record5000m": "13:12.63",
+      "record5000mDate": "2015/07/18",
+      "record10000m": "27:29.74",
+      "record10000mDate": "2015/11/28",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2005年〜2008年",
+          "name": "世羅高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "2008年〜2012年",
+          "name": "明治大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2012年〜現在",
+          "name": "旭化成"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "14:00.80",
+          "record10000m": "-",
+          "note": ""
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "13:29.03",
+          "record10000m": "27:44.30",
+          "note": ""
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "13:12.63",
+          "record10000m": "27:29.74",
+          "note": "5000m,10000mはともに日本歴代2位（当時）"
+        }
+      ]
+    },
+    {
+      "slug": "ichida",
+      "name": "市田 孝",
+      "team": "旭化成",
+      "record5000m": "記録なし",
+      "record5000mDate": "-",
+      "record10000m": "27:59.10",
+      "record10000mDate": "2026/05/23",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2008年～2011年",
+          "name": "鹿児島実業高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "2011年～2015年",
+          "name": "大東文化大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "確認中",
+          "name": "確認中"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "13:55.44",
+          "record10000m": "-",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        }
+      ]
+    },
+    {
+      "slug": "hanyu",
+      "name": "羽生 拓矢",
+      "team": "トヨタ紡織",
+      "record5000m": "記録なし",
+      "record5000mDate": "-",
+      "record10000m": "27:27.49",
+      "record10000mDate": "2022/11/26",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2013年～2016年",
+          "name": "八千代松陰高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "2016年～2020年",
+          "name": "東海大"
+        },
+        {
+          "category": "所属チーム",
+          "period": "確認中",
+          "name": "確認中"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "13:52.98",
+          "record10000m": "-",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        }
+      ]
+    },
+    {
+      "slug": "aizawa",
+      "name": "相澤 晃",
+      "team": "旭化成",
+      "record5000m": "13:24.97",
+      "record5000mDate": "2026/05/04",
+      "record10000m": "27:13.04",
+      "record10000mDate": "2023/12/10",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2013年〜2016年",
+          "name": "学法石川高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "2016年〜2020年",
+          "name": "東洋大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2020年〜現在",
+          "name": "旭化成"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "13:54.75",
+          "record10000m": "-",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "東洋大学時代の年代別PBは確認中。"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "13:24.97",
+          "record10000m": "27:18.75",
+          "note": "自己ベストとして整理。"
+        }
+      ]
+    },
+    {
+      "slug": "tazawa",
+      "name": "田澤 廉",
+      "team": "トヨタ自動車",
+      "record5000m": "記録なし",
+      "record5000mDate": "-",
+      "record10000m": "27:22.31",
+      "record10000mDate": "2023/12/10",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2016年〜2019年",
+          "name": "青森山田高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "2019年〜2023年",
+          "name": "駒澤大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2023年〜現在",
+          "name": "トヨタ自動車"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "13:53.61",
+          "record10000m": "-",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "13:22.60",
+          "record10000m": "27:23.44",
+          "note": "駒澤大学時代の主要PBとして整理。"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "確認中",
+          "record10000m": "27:22.31",
+          "note": "10000mは自己ベストとして整理。"
+        }
+      ]
+    },
+    {
+      "slug": "yoshii",
+      "name": "吉居 大和",
+      "team": "トヨタ自動車",
+      "record5000m": "13:23.92",
+      "record5000mDate": "2026/04/11",
+      "record10000m": "27:21.45",
+      "record10000mDate": "2025/11/22",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2018年〜2021年",
+          "name": "仙台育英高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "2021年〜2025年",
+          "name": "中央大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2025年〜現在",
+          "name": "トヨタ自動車"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "13:55.10",
+          "record10000m": "-",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        }
+      ]
+    },
+    {
+      "slug": "suzuki",
+      "name": "鈴木 芽吹",
+      "team": "トヨタ自動車",
+      "record5000m": "13:13.80",
+      "record5000mDate": "2024/09/28",
+      "record10000m": "27:05.92",
+      "record10000mDate": "2025/11/22",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2017年〜2020年",
+          "name": "佐久長聖高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "2020年〜2024年",
+          "name": "駒澤大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2024年〜現在",
+          "name": "トヨタ自動車"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "13:56.64",
+          "record10000m": "-",
+          "note": ""
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "13:13.80",
+          "record10000m": "27:05.92",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "slug": "masuko",
+      "name": "増子 陽太",
+      "team": "早稲田大学",
+      "record5000m": "13:20.35",
+      "record5000mDate": "2026/05/04",
+      "record10000m": "記録なし",
+      "record10000mDate": "-",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2023年～2026年",
+          "name": "学法石川高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "2026年～現在",
+          "name": "早稲田大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "確認中",
+          "name": "確認中"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "13:27.26",
+          "record10000m": "-",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "13:20.35",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        }
+      ]
+    },
+    {
+      "slug": "suzuki-ryuin",
+      "name": "鈴木 琉胤",
+      "team": "早稲田大学",
+      "record5000m": "13:20.64",
+      "record5000mDate": "2026/04/11",
+      "record10000m": "記録なし",
+      "record10000mDate": "-",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2022年～2025年",
+          "name": "確認中"
+        },
+        {
+          "category": "出身大学",
+          "period": "2025年～現在",
+          "name": "早稲田大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "確認中",
+          "name": "確認中"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "確認中",
+          "record10000m": "-",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "13:20.64",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        }
+      ]
+    },
+    {
+      "slug": "matsumiya",
+      "name": "松宮 隆行",
+      "team": "コニカミノルタ",
+      "record5000m": "13:13.20",
+      "record5000mDate": "2007-07-28",
+      "record10000m": "27:41.75",
+      "record10000mDate": "2008-05-04",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "1995年～1998年",
+          "name": "花輪高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "-",
+          "name": "-"
+        },
+        {
+          "category": "所属チーム",
+          "period": "1998年～2015年",
+          "name": "コニカミノルタ"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2015年～2021年",
+          "name": "愛知製銅"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "14:38.68",
+          "record10000m": "31:37.28",
+          "note": ""
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "-",
+          "record10000m": "-",
+          "note": ""
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "13:13.20",
+          "record10000m": "27:41.75",
+          "note": "5000m日本記録（当時）"
+        }
+      ]
+    },
+    {
+      "slug": "takaoka",
+      "name": "高岡 寿成",
+      "team": "カネボウ",
+      "record5000m": "13:13.40",
+      "record5000mDate": "1998-08-01",
+      "record10000m": "27:35.09",
+      "record10000mDate": "2001-05-04",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "1986年～1989年",
+          "name": "洛南高校"
+        },
+        {
+          "category": "出身大学",
+          "period": "1989年～1993年",
+          "name": "龍谷大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "1993年～2009年",
+          "name": "カネボウ"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "14:48.50",
+          "record10000m": "30:50.15",
+          "note": ""
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "13:20.43",
+          "record10000m": "29:28.00",
+          "note": ""
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "13:13.40",
+          "record10000m": "27:35.09",
+          "note": "5000m日本記録（当時）"
+        }
+      ]
+    },
+    {
+      "slug": "kobayashi",
+      "name": "小林 歩",
+      "team": "SUBARU",
+      "record5000m": "記録なし",
+      "record5000mDate": "-",
+      "record10000m": "27:28.13",
+      "record10000mDate": "2023-12-10",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "2014年〜2017年",
+          "name": "確認中"
+        },
+        {
+          "category": "出身大学",
+          "period": "2017年～2021年",
+          "name": "駒澤大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2021年～2025年",
+          "name": "NTT西日本"
+        },
+        {
+          "category": "所属チーム",
+          "period": "2025年〜現在",
+          "name": "SUBARU"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "確認中",
+          "record10000m": "-",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "確認中",
+          "record10000m": "27:28.13",
+          "note": "年代別PBは確認中"
+        }
+      ]
+    },
+    {
+      "slug": "tsurukawa",
+      "name": "鶴川 正也",
+      "team": "GMOインターネットグループ",
+      "record5000m": "13:17.64",
+      "record5000mDate": "2025-04-12",
+      "record10000m": "記録なし",
+      "record10000mDate": "-",
+      "careerHistory": [
+        {
+          "category": "出身高校",
+          "period": "確認中",
+          "name": "確認中"
+        },
+        {
+          "category": "出身大学",
+          "period": "確認中",
+          "name": "青山学院大学"
+        },
+        {
+          "category": "所属チーム",
+          "period": "確認中",
+          "name": "GMOインターネットグループ"
+        }
+      ],
+      "careerStageBests": [
+        {
+          "stage": "高校時代",
+          "record5000m": "確認中",
+          "record10000m": "-",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "大学時代",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        },
+        {
+          "stage": "社会人",
+          "record5000m": "確認中",
+          "record10000m": "確認中",
+          "note": "年代別PBは確認中"
+        }
+      ]
+    }
+  ]
+}
