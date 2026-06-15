@@ -56,8 +56,6 @@ export type CareerHistoryItem = {
 export const recordsLastChecked = {
   records5000m: "2026/05/23",
   records10000m: "2026/05/10",
-  womenRecords5000m: "確認中",
-  womenRecords10000m: "確認中",
 };
 
 const men5000Source = {
@@ -74,19 +72,6 @@ const men10000Source = {
   verificationStatus: "confirmed" as const,
 };
 
-const women5000Source = {
-  sourceUrl: "https://genkimanman.com/rekidaikiroku/jpwomen5000M100.html",
-  sourceName: "元気満々 女子5000m日本歴代記録",
-  verifiedAt: "2026-06-11",
-  verificationStatus: "confirmed" as const,
-};
-
-const women10000Source = {
-  sourceUrl: "https://genkimanman.com/rekidaikiroku/jpwomen10000M100.html",
-  sourceName: "元気満々 女子10000m日本歴代記録",
-  verifiedAt: "2026-06-11",
-  verificationStatus: "confirmed" as const,
-};
 
 export const records5000: RankingRecord[] = [
   { rank: 1, slug: "osako", name: "大迫 傑", record: "13:08.40", team: "Nike", venue: "ナイトオブアスレチックス", date: "2015-07-18", ...men5000Source },
@@ -176,34 +161,6 @@ export const currentSeasonRecords10000: RankingRecord[] = [
   { rank: 15, slug: "okahara", name: "Hitoshi OKAHARA", record: "28:09.86", team: "JPN", venue: "日体大記録会", date: "2026/04/25", note: "漢字未確認" },
 ];
 
-export const womenRecords5000: RankingRecord[] = [
-  { rank: 1, slug: "nozomi-tanaka", name: "田中 希実", record: "14:29.18", team: "TeamNB", venue: "ダイヤモンドリーグ ブリュッセル", date: "2023-09-07", ...women5000Source },
-  { rank: 2, slug: "ririka-hironaka", name: "廣中 璃梨佳", record: "14:52.84", team: "JP日本郵政グループ", venue: "東京オリンピック決勝", date: "2021-08-02", ...women5000Source },
-  { rank: 3, slug: "kayoko-fukushi", name: "福士 加代子", record: "14:53.22", team: "ワコール", venue: "ゴールデンガラ", date: "2005-07-08", ...women5000Source },
-  { rank: 4, slug: "hitomi-niiya", name: "新谷 仁美", record: "14:55.83", team: "積水化学", venue: "実業団陸上", date: "2020-09-20", ...women5000Source },
-  { rank: 5, slug: "kaede-hagiya", name: "萩谷 楓", record: "14:59.36", team: "エディオン", venue: "実業団陸上", date: "2021-09-26", ...women5000Source },
-  { rank: 6, slug: "tomoka-kimura", name: "木村 友香", record: "15:02.48", team: "資生堂", venue: "エディオンディスタンスチャレンジ in 京都", date: "2021-12-10", ...women5000Source },
-  { rank: 7, slug: "harumi-hiroyama", name: "弘山 晴美", record: "15:03.67", team: "資生堂", venue: "DNガラン", date: "1998-08-05", ...women5000Source },
-  { rank: 8, slug: "yuriko-kobayashi", name: "小林 祐梨子", record: "15:05.37", team: "豊田自動織機", venue: "静岡県長距離強化記録会", date: "2008-10-15", ...women5000Source },
-  { rank: 9, slug: "yukiko-akaba", name: "赤羽 有紀子", record: "15:06.07", team: "ホクレン", venue: "ホクレンDC北見", date: "2008-07-13", ...women5000Source },
-  { rank: 10, slug: "mao-ichiyama", name: "一山 麻緒", record: "15:06.66", team: "ワコール", venue: "ホクレンDC千歳", date: "2020-07-18", ...women5000Source },
-];
-
-export const womenRecords10000: RankingRecord[] = [
-  { rank: 1, slug: "hitomi-niiya", name: "新谷 仁美", record: "30:20.44", team: "積水化学", venue: "日本選手権", date: "2020-12-04", ...women10000Source },
-  { rank: 2, slug: "ririka-hironaka", name: "廣中 璃梨佳", record: "30:39.71", team: "JP日本郵政グループ", venue: "世界陸上", date: "2022-07-16", ...women10000Source },
-  { rank: 3, slug: "seira-fuwa", name: "不破 聖衣来", record: "30:45.21", team: "拓殖大学", venue: "関西実業団ディスタンストライアル in 京都", date: "2021-12-11", ...women10000Source },
-  { rank: 4, slug: "yoko-shibui", name: "渋井 陽子", record: "30:48.89", team: "三井住友海上", venue: "パロアルト", date: "2002-05-03", ...women10000Source },
-  { rank: 5, slug: "kayoko-fukushi", name: "福士 加代子", record: "30:51.81", team: "ワコール", venue: "アジア大会釜山", date: "2002-10-08", ...women10000Source },
-  { rank: 6, slug: "rino-goshima", name: "五島 莉乃", record: "30:53.31", team: "資生堂", venue: "日本選手権", date: "2024-05-03", ...women10000Source },
-  { rank: 7, slug: "nozomi-tanaka", name: "田中 希実", record: "30:54.40", team: "TeamNB", venue: "EDC in 大阪", date: "2025-12-06", ...women10000Source },
-  { rank: 8, slug: "yuka-takashima", name: "高島 由香", record: "30:57.26", team: "資生堂", venue: "日本選手権", date: "2023-12-10", ...women10000Source },
-  { rank: 9, slug: "haruka-koumi", name: "小海 遥", record: "30:57.67", team: "第一生命", venue: "日本選手権", date: "2023-12-10", ...women10000Source },
-  { rank: 10, slug: "wakana-kabasawa", name: "樺沢 和佳奈", record: "31:03.14", team: "三井住友海上", venue: "EDC in 大阪", date: "2025-12-06", ...women10000Source },
-];
-export const currentSeasonWomenRecords5000: RankingRecord[] = [];
-
-export const currentSeasonWomenRecords10000: RankingRecord[] = [];
 
 const playerSlugOrder = Array.from(
   new Set(
@@ -212,10 +169,6 @@ const playerSlugOrder = Array.from(
       ...currentSeasonRecords5000,
       ...records10000,
       ...currentSeasonRecords10000,
-      ...womenRecords5000,
-      ...currentSeasonWomenRecords5000,
-      ...womenRecords10000,
-      ...currentSeasonWomenRecords10000,
     ].map(
       (record) => record.slug,
     ),
@@ -562,29 +515,15 @@ export function createPlayerProfiles(
   const extra10000m = extraRecords.filter(
     (record) => record.groupId === "season-10000",
   );
-  const extraWomen5000m = extraRecords.filter(
-    (record) => record.groupId === "season-women-5000",
-  );
-  const extraWomen10000m = extraRecords.filter(
-    (record) => record.groupId === "season-women-10000",
-  );
   const season5000m = extra5000m.length > 0 ? extra5000m : currentSeasonRecords5000;
   const season10000m = extra10000m.length > 0 ? extra10000m : currentSeasonRecords10000;
-  const seasonWomen5000m =
-    extraWomen5000m.length > 0 ? extraWomen5000m : currentSeasonWomenRecords5000;
-  const seasonWomen10000m =
-    extraWomen10000m.length > 0 ? extraWomen10000m : currentSeasonWomenRecords10000;
   const sourceRecords5000m = [
     ...records5000,
     ...season5000m,
-    ...womenRecords5000,
-    ...seasonWomen5000m,
   ];
   const sourceRecords10000m = [
     ...records10000,
     ...season10000m,
-    ...womenRecords10000,
-    ...seasonWomen10000m,
   ];
   const slugs = Array.from(
     new Set([...sourceRecords5000m, ...sourceRecords10000m].map((record) => record.slug)),

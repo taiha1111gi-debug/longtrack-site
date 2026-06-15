@@ -24,8 +24,6 @@ export default async function AdminPage({
   const params = await searchParams;
   const records5000 = getEditableRecords("season-5000");
   const records10000 = getEditableRecords("season-10000");
-  const womenRecords5000 = getEditableRecords("season-women-5000");
-  const womenRecords10000 = getEditableRecords("season-women-10000");
   const playerProfiles = createPlayerProfiles(
     getAllEditableRecords(),
     getPlayerProfileOverrides(),
@@ -91,8 +89,6 @@ export default async function AdminPage({
 
         <EditableRanking title="今季男子5000mランキング" records={records5000} groupId="season-5000" />
         <EditableRanking title="今季男子10000mランキング" records={records10000} groupId="season-10000" />
-        <EditableRanking title="今季女子5000mランキング" records={womenRecords5000} groupId="season-women-5000" />
-        <EditableRanking title="今季女子10000mランキング" records={womenRecords10000} groupId="season-women-10000" />
         <PlayerProfileEditor profiles={playerProfiles} />
       </div>
     </main>
@@ -119,8 +115,6 @@ function AddRecordForm() {
           >
             <option value="season-5000">今季5000m</option>
             <option value="season-10000">今季10000m</option>
-            <option value="season-women-5000">今季女子5000m</option>
-            <option value="season-women-10000">今季女子10000m</option>
           </select>
         </label>
         <Field label="slug" name="slug" value="" />

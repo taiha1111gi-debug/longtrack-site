@@ -76,8 +76,6 @@ export async function updateRecordAction(formData: FormData) {
 
   revalidatePath("/records/5000m/season");
   revalidatePath("/records/10000m/season");
-  revalidatePath("/records/women-5000m/season");
-  revalidatePath("/records/women-10000m/season");
   revalidatePath("/admin");
   redirectAdmin();
 }
@@ -121,8 +119,6 @@ export async function updateRecordsAction(formData: FormData) {
 
   revalidatePath("/records/5000m/season");
   revalidatePath("/records/10000m/season");
-  revalidatePath("/records/women-5000m/season");
-  revalidatePath("/records/women-10000m/season");
   revalidatePath("/admin");
   redirectAdmin();
 }
@@ -162,8 +158,6 @@ export async function addRecordAction(formData: FormData) {
 
   revalidatePath("/records/5000m/season");
   revalidatePath("/records/10000m/season");
-  revalidatePath("/records/women-5000m/season");
-  revalidatePath("/records/women-10000m/season");
   revalidatePath("/admin");
   redirectAdmin();
 }
@@ -291,12 +285,7 @@ function redirectAdmin(message?: string): never {
 }
 
 function isRankingGroup(value: string): value is EditableRecord["groupId"] {
-  return (
-    value === "season-5000" ||
-    value === "season-10000" ||
-    value === "season-women-5000" ||
-    value === "season-women-10000"
-  );
+  return value === "season-5000" || value === "season-10000";
 }
 
 function isCareerHistoryItem(item: {

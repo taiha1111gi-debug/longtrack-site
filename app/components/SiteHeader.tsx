@@ -9,15 +9,11 @@ type NavItem = {
 const eventLinks: NavItem[] = [
   { href: "/records/5000m", label: "男子5000m歴代ランキング" },
   { href: "/records/10000m", label: "男子10000m歴代ランキング" },
-  { href: "/records/women-5000m", label: "女子5000m歴代ランキング" },
-  { href: "/records/women-10000m", label: "女子10000m歴代ランキング" },
 ];
 
 const rankingLinks: NavItem[] = [
   { href: "/records/5000m/season", label: "今季男子5000mランキング" },
   { href: "/records/10000m/season", label: "今季男子10000mランキング" },
-  { href: "/records/women-5000m/season", label: "今季女子5000mランキング" },
-  { href: "/records/women-10000m/season", label: "今季女子10000mランキング" },
 ];
 
 export function SiteHeader() {
@@ -89,7 +85,7 @@ function Dropdown({
   return (
     <details className="group relative">
       <summary className="cursor-pointer list-none rounded-md px-3 py-2 text-sm font-bold text-slate-200 hover:bg-white/10 hover:text-white marker:hidden">
-        {label} ▾
+        {label} ▼
       </summary>
       <div className={`absolute left-0 top-full mt-2 ${widthClass} rounded-md border border-slate-700 bg-slate-950 p-2 shadow-xl`}>
         {items.map((item) => (
@@ -121,7 +117,7 @@ function MobileDropdown({ label, items }: { label: string; items: NavItem[] }) {
   return (
     <details className="my-2 border-y border-white/10 py-2">
       <summary className="cursor-pointer list-none rounded-md px-3 py-3 text-sm font-bold text-slate-100 hover:bg-white/10 marker:hidden">
-        {label} ▾
+        {label} ▼
       </summary>
       {items.map((item) => (
         <Link

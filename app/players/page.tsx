@@ -12,16 +12,6 @@ const trackLinks = [
     title: "男子10000m歴代ランキング",
     body: "男子10000mの歴代上位記録を確認できます。",
   },
-  {
-    href: "/records/women-5000m",
-    title: "女子5000m歴代ランキング",
-    body: "女子5000mの歴代上位記録を確認できます。",
-  },
-  {
-    href: "/records/women-10000m",
-    title: "女子10000m歴代ランキング",
-    body: "女子10000mの歴代上位記録を確認できます。",
-  },
 ];
 
 export default function PlayersPage() {

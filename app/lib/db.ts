@@ -3,14 +3,12 @@ import path from "node:path";
 import {
   currentSeasonRecords10000,
   currentSeasonRecords5000,
-  currentSeasonWomenRecords10000,
-  currentSeasonWomenRecords5000,
   type PlayerProfileOverride,
   type RankingRecord,
 } from "../records/data";
 
 export type EditableRecord = RankingRecord & {
-  groupId: "season-5000" | "season-10000" | "season-women-5000" | "season-women-10000";
+  groupId: "season-5000" | "season-10000";
 };
 
 type DatabaseShape = {
@@ -129,8 +127,6 @@ function ensureDatabase() {
     records: [
       ...toEditableRecords("season-5000", currentSeasonRecords5000),
       ...toEditableRecords("season-10000", currentSeasonRecords10000),
-      ...toEditableRecords("season-women-5000", currentSeasonWomenRecords5000),
-      ...toEditableRecords("season-women-10000", currentSeasonWomenRecords10000),
     ],
     playerProfiles: [],
   });
