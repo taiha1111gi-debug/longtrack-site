@@ -6,6 +6,7 @@
   team: string;
   venue: string;
   date: string;
+  destination?: string;
   note?: string;
   sourceUrl?: string;
   sourceName?: string;
@@ -159,6 +160,17 @@ export const currentSeasonRecords10000: RankingRecord[] = [
   { rank: 13, slug: "hanyu", name: "羽生 拓矢", record: "28:07.55", team: "トヨタ紡織", venue: "木南道孝記念", date: "2026/05/10" },
   { rank: 14, slug: "kuwata", name: "桑田 駿介", record: "28:07.63", team: "駒澤大学", venue: "関東インカレ", date: "2026/05/21" },
   { rank: 15, slug: "okahara", name: "Hitoshi OKAHARA", record: "28:09.86", team: "JPN", venue: "日体大記録会", date: "2026/04/25", note: "漢字未確認" },
+];
+
+export const freshmanRecords5000: RankingRecord[] = [
+  { rank: 1, slug: "yoshida-sei", name: "吉田 星", record: "13:35.14", team: "東海大附札幌高", venue: "", date: "", destination: "" },
+  { rank: 2, slug: "baba-yuzu", name: "馬場 柚", record: "13:56.15", team: "埼玉栄高", venue: "", date: "", destination: "" },
+  { rank: 3, slug: "umeda-tairiku", name: "梅田 大陸", record: "13:58.27", team: "須磨学園高", venue: "", date: "", destination: "" },
+  { rank: 4, slug: "onuma-hikaru", name: "大沼 光琉", record: "14:01.96", team: "豊川高", venue: "", date: "", destination: "" },
+  { rank: 5, slug: "iiboshi-sota", name: "飯干 颯大", record: "14:03.31", team: "智弁カレッジ", venue: "", date: "", destination: "" },
+  { rank: 6, slug: "kuwahara-shota", name: "桑原 将大", record: "14:05.06", team: "京都外大西高", venue: "", date: "", destination: "" },
+  { rank: 7, slug: "tanaka-masanobu", name: "田中 允紳", record: "14:08.54", team: "九州学院高", venue: "", date: "", destination: "" },
+  { rank: 8, slug: "kimura-yumi", name: "木村 悠未", record: "14:09.97", team: "拓大一高", venue: "", date: "", destination: "" },
 ];
 
 

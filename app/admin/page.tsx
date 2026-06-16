@@ -24,6 +24,7 @@ export default async function AdminPage({
   const params = await searchParams;
   const records5000 = getEditableRecords("season-5000");
   const records10000 = getEditableRecords("season-10000");
+  const freshmanRecords5000 = getEditableRecords("freshman-2027-5000");
   const playerProfiles = createPlayerProfiles(
     getAllEditableRecords(),
     getPlayerProfileOverrides(),
@@ -89,6 +90,7 @@ export default async function AdminPage({
 
         <EditableRanking title="今季男子5000mランキング" records={records5000} groupId="season-5000" />
         <EditableRanking title="今季男子10000mランキング" records={records10000} groupId="season-10000" />
+        <EditableRanking title="2027新入生 高校5000mランキング" records={freshmanRecords5000} groupId="freshman-2027-5000" />
         <PlayerProfileEditor profiles={playerProfiles} />
       </div>
     </main>
@@ -115,6 +117,7 @@ function AddRecordForm() {
           >
             <option value="season-5000">今季5000m</option>
             <option value="season-10000">今季10000m</option>
+            <option value="freshman-2027-5000">2027新入生 高校5000m</option>
           </select>
         </label>
         <Field label="slug" name="slug" value="" />
@@ -123,6 +126,7 @@ function AddRecordForm() {
         <Field label="所属" name="team" value="" />
         <Field label="大会・場所" name="venue" value="" />
         <Field label="日付" name="date" value="" />
+        <Field label="進路" name="destination" value="" />
         <Field label="メモ" name="note" value="" />
         <Field label="出典URL" name="sourceUrl" value="" />
         <Field label="出典名" name="sourceName" value="" />
@@ -177,7 +181,7 @@ function EditableRanking({
         <input type="hidden" name="rowCount" value={records.length} />
 
         <div className="mt-5 max-h-[70vh] overflow-auto rounded-md border border-slate-200">
-          <table className="w-full min-w-[1680px] border-collapse bg-white text-sm">
+          <table className="w-full min-w-[1800px] border-collapse bg-white text-sm">
             <thead className="sticky top-0 z-10 bg-slate-900 text-left text-white">
               <tr>
                 <th className={tableHeadClass}>順位</th>
@@ -187,6 +191,7 @@ function EditableRanking({
                 <th className={tableHeadClass}>所属</th>
                 <th className={tableHeadClass}>大会場所</th>
                 <th className={tableHeadClass}>日付</th>
+                <th className={tableHeadClass}>進路</th>
                 <th className={tableHeadClass}>メモ</th>
                 <th className={tableHeadClass}>出典URL</th>
                 <th className={tableHeadClass}>出典名</th>
@@ -219,6 +224,9 @@ function EditableRanking({
                   </td>
                   <td className={tableCellClass}>
                     <CellInput name={`rows.${index}.date`} value={record.date} />
+                  </td>
+                  <td className={tableCellClass}>
+                    <CellInput name={`rows.${index}.destination`} value={record.destination ?? ""} />
                   </td>
                   <td className={tableCellClass}>
                     <CellInput name={`rows.${index}.note`} value={record.note ?? ""} />

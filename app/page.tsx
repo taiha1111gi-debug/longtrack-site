@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "./components/SiteHeader";
 
@@ -20,8 +20,8 @@ const eraHighlights = [
   },
   {
     year: "2024-2026",
-    title: "13分13秒台と27分一桁台へ",
-    body: "佐藤圭汰が5000mで13分09秒台を記録し、塩尻和也や鈴木芽吹らも10000mで日本トップ水準を更新。日本男子長距離は、5000mの13分ひと桁、10000mの26分台を現実的な目標として見据える時代に入っている。",
+    title: "12分台と26分台を目指して",
+    body: "佐藤圭汰が5000mで13分09秒台を記録し、塩尻和也や鈴木芽吹らも10000mで日本トップ水準を更新。日本男子長距離は、5000mの12分台、10000mの26分台を現実的な目標として見据える時代に入っている。",
   },
 ];
 
@@ -40,6 +40,49 @@ const latestUpdates = [
     date: "2026/06/10",
     title: "大会・環境メモを拡充しました",
     body: "八王子ロングディスタンス、日体大長距離競技会、ホクレンDCなど、記録が出やすい大会の時期と特徴を整理しました。",
+  },
+];
+
+const paceNotes = [
+  {
+    title: "5000m 12分台のペース感",
+    target: "12:59.00",
+    splits: [
+      "100m 約15.6秒",
+      "400m 約62.3秒",
+      "1000m 約2分35.8秒",
+    ],
+    body: "1周62秒前後を12周半。短距離のようなスピードではなく、速い巡航をほとんど緩めずに最後まで続ける難しさがあります。",
+  },
+  {
+    title: "10000m 26分台のペース感",
+    target: "26:59.00",
+    splits: [
+      "100m 約16.2秒",
+      "400m 約64.8秒",
+      "1000m 約2分41.9秒",
+    ],
+    body: "1周65秒を切るペースを25周。少しの力みや中だるみが大きな差になるため、スピードと持久力の両方が極めて高い水準で求められます。",
+  },
+  {
+    title: "現在の日本記録 5000m",
+    target: "13:08.40",
+    splits: [
+      "100m 約15.8秒",
+      "400m 約63.1秒",
+      "1000m 約2分37.7秒",
+    ],
+    body: "大迫傑の日本記録ペースでも、1kmを2分37秒台で5本並べる計算です。12分台には、そこからさらに1周あたり約0.7秒ずつ速く進む必要があります。",
+  },
+  {
+    title: "現在の日本記録 10000m",
+    target: "27:05.92",
+    splits: [
+      "100m 約16.3秒",
+      "400m 約65.0秒",
+      "1000m 約2分42.6秒",
+    ],
+    body: "鈴木芽吹の日本記録ペースは、1km2分42秒台を10本。26分台まではわずか数秒ですが、その数秒を25周全体から削る難度は非常に高いです。",
   },
 ];
 
@@ -66,7 +109,9 @@ export default function Home() {
             Track Distance Records
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-100 sm:text-xl">
-            日本男子長距離の記録・選手情報・大会メモをまとめた、　　　　　5000m・10000m中心のアーカイブサイト
+            <span>日本男子長距離の記録・選手情報・大会メモをまとめた</span>
+            <br />
+            <span>5000m・10000m中心のアーカイブサイト</span>
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
@@ -81,72 +126,78 @@ export default function Home() {
             >
               今季PBランキングへ
             </Link>
-          </div>
+            <Link
+              href="/records/freshman-2027-5000"
+              className="inline-flex w-fit rounded-md border border-cyan-200 bg-cyan-200/15 px-4 py-3 text-sm font-black text-white hover:bg-cyan-100 hover:text-slate-950"
+            >
+              2027新入生 高校5000mランキングへ
+            </Link>          </div>
         </div>
       </section>
 
       <div className="mx-auto max-w-7xl px-6 py-10 sm:px-10 lg:px-12">
-        <section id="overview" className="grid gap-5 lg:grid-cols-[0.85fr_1.15fr]">
+        <section id="overview" className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="rounded-md border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm font-bold tracking-[0.14em] text-cyan-700">
               OVERVIEW
             </p>
             <h2 className="mt-1 text-2xl font-black">5000mと10000mの違い</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              5000mはスピードの許容量が問われ、10000mはラップを崩さない持久力がより強く問われます。どちらもロードや駅伝へつながる基礎種目ですが、記録の読み方は少し変わります。
+              5000mと10000mは、どちらも長距離選手の力を測る代表的なトラック種目です。
+              5000mは比較的スピード色が強く、10000mはより長い時間ペースを保つ力が求められます。
+              同じ長距離でも、距離が変わることでレースの見方や記録の価値は少し変わります。
             </p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              <Metric title="5000m" body="12.5周。13分10秒前後では、1周ごとの小さな遅れがすぐ順位差になります。" />
-              <Metric title="10000m" body="25周。中盤以降も65秒前後を淡々と刻み続ける強さが必要です。" />
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+              <Metric title="5000m" body="トラック12.5周で争われる種目。スピードを保ったまま走り切る力や、終盤の切り替えが重要になります。" />
+              <Metric title="10000m" body="トラック25周で争われる種目。長い距離の中でペースを安定させ、後半まで粘る力が求められます。" />
             </div>
           </div>
 
           <div className="rounded-md border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm font-bold tracking-[0.14em] text-cyan-700">
-              HISTORY
+              PACE
             </p>
-            <h2 className="mt-1 text-2xl font-black">年代別ハイライト</h2>
-            <div className="mt-5 space-y-4">
-              {eraHighlights.map((item) => (
-                <article key={item.year} className="grid grid-cols-[82px_1fr] gap-4">
-                  <p className="rounded-md bg-slate-900 px-3 py-2 text-center text-sm font-black text-white">
-                    {item.year}
-                  </p>
-                  <div>
-                    <h3 className="font-bold">{item.title}</h3>
-                    <p className="mt-1 text-sm leading-7 text-slate-600">
-                      {item.body}
-                    </p>
-                  </div>
-                </article>
+            <h2 className="mt-1 text-2xl font-black">12分台・26分台の難しさ</h2>
+            <p className="mt-3 text-sm leading-7 text-slate-600">
+              記録の数字は数秒差でも、トラックでは1周ごとのわずかな差を長く積み重ねる世界です。
+              目標ラインと現在の日本記録をペースに直すと、その難しさが見えやすくなります。
+            </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              {paceNotes.map((item) => (
+                <PaceCard key={item.title} {...item} />
               ))}
             </div>
           </div>
         </section>
 
-        <section id="updates" className="mt-8 rounded-md border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+        <section id="history" className="mt-8 rounded-md border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
           <p className="text-sm font-bold tracking-[0.14em] text-cyan-700">
-            UPDATES
+            HISTORY
           </p>
-          <h2 className="mt-1 text-2xl font-black">最新更新メモ</h2>
-          <div className="mt-5 grid gap-4 lg:grid-cols-3">
-            {latestUpdates.map((item) => (
-              <article key={`${item.date}-${item.title}`} className="rounded-md bg-slate-100 p-4">
-                <p className="text-xs font-black tracking-[0.14em] text-cyan-700">
-                  {item.date}
+          <h2 className="mt-1 text-2xl font-black">年代別ハイライト</h2>
+          <div className="mt-5 grid gap-4 lg:grid-cols-2">
+            {eraHighlights.map((item) => (
+              <article key={item.year} className="grid grid-cols-[82px_1fr] gap-4 rounded-md bg-slate-100 p-4">
+                <p className="rounded-md bg-slate-900 px-3 py-2 text-center text-sm font-black text-white">
+                  {item.year}
                 </p>
-                <h3 className="mt-2 font-bold">{item.title}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">{item.body}</p>
+                <div>
+                  <h3 className="font-bold">{item.title}</h3>
+                  <p className="mt-1 text-sm leading-7 text-slate-600">
+                    {item.body}
+                  </p>
+                </div>
               </article>
             ))}
           </div>
         </section>
 
+
         <section id="context" className="mt-8 rounded-md border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
           <p className="text-sm font-bold tracking-[0.14em] text-cyan-700">
             CONTEXT
           </p>
-          <h2 className="mt-1 text-2xl font-black">大会・環境メモ</h2>
+          <h2 className="mt-1 text-2xl font-black">国内大会・環境メモ</h2>
           <div className="mt-5 grid gap-4 lg:grid-cols-3">
             <InfoBlock
               title="金栗記念選抜陸上"
@@ -177,6 +228,24 @@ export default function Home() {
             注: 開催時期は代表的な目安です。年度や大会運営の都合により変更される場合があります。
           </p>
         </section>
+
+        <section id="updates" className="mt-8 rounded-md border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+          <p className="text-sm font-bold tracking-[0.14em] text-cyan-700">
+            UPDATES
+          </p>
+          <h2 className="mt-1 text-2xl font-black">最新更新メモ</h2>
+          <div className="mt-5 grid gap-4 lg:grid-cols-3">
+            {latestUpdates.map((item) => (
+              <article key={`${item.date}-${item.title}`} className="rounded-md bg-slate-100 p-4">
+                <p className="text-xs font-black tracking-[0.14em] text-cyan-700">
+                  {item.date}
+                </p>
+                <h3 className="mt-2 font-bold">{item.title}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-600">{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
       </div>
     </main>
   );
@@ -191,6 +260,57 @@ function Metric({ title, body }: { title: string; body: string }) {
   );
 }
 
+function PaceCard({
+  title,
+  target,
+  splits,
+  body,
+}: {
+  title: string;
+  target: string;
+  splits: string[];
+  body: string;
+}) {
+  const [hundredMeterSplit, ...distanceSplits] = splits;
+  const hundredMeter = splitPaceLabel(hundredMeterSplit);
+  const distancePaces = distanceSplits.map(splitPaceLabel);
+
+  return (
+    <article className="rounded-md bg-white p-4 shadow-sm ring-1 ring-slate-200">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h4 className="font-black">{title}</h4>
+        <p className="text-lg font-black text-red-600">{target}</p>
+      </div>
+      <dl className="mt-3 grid grid-cols-2 gap-2 text-sm text-slate-700">
+        <div className="flex min-h-full flex-col justify-center rounded bg-slate-900 px-3 py-3 font-black text-white">
+          <dt>{hundredMeter.label}</dt>
+          <dd className="mt-1 text-lg leading-tight">{hundredMeter.value}</dd>
+        </div>
+        <div className="grid gap-2">
+          {distancePaces.map((pace) => (
+            <div key={pace.label} className="rounded bg-slate-100 px-3 py-2 font-bold">
+              <dt>{pace.label}</dt>
+              <dd className="mt-1 text-lg leading-tight text-slate-900">
+                {pace.value}
+              </dd>
+            </div>
+          ))}
+        </div>
+      </dl>
+      <p className="mt-3 text-sm leading-7 text-slate-600">{body}</p>
+    </article>
+  );
+}
+
+function splitPaceLabel(split: string) {
+  const [label, ...valueParts] = split.split(" ");
+
+  return {
+    label,
+    value: valueParts.join(" "),
+  };
+}
+
 function InfoBlock({ title, body }: { title: string; body: string }) {
   return (
     <article className="rounded-md bg-slate-100 p-4">
@@ -200,3 +320,5 @@ function InfoBlock({ title, body }: { title: string; body: string }) {
   );
 }
 
+const rankingThClass = "px-4 py-3 font-bold whitespace-nowrap";
+const rankingTdClass = "px-4 py-4 align-top";

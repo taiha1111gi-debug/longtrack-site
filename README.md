@@ -1,49 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Long Track Records
 
-## Getting Started
+Next.js App Routerで作成している、日本男子長距離の記録・選手情報・大会メモをまとめるサイトです。
 
-First, run the development server:
+## 開発
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開きます。
 
-## Admin
+## ビルド確認
 
-Create `.env.local` before using the admin page.
+```bash
+npm run build
+```
+
+## 管理画面
+
+管理画面を使う前に、ローカルでは `.env.local` を作成します。
 
 ```env
 ADMIN_PASSWORD=your-password
 ADMIN_SESSION_SECRET=change-this-to-a-long-random-string
 ```
 
-Then open [http://localhost:3000/admin/login](http://localhost:3000/admin/login).
+管理画面ログイン:
 
-The admin page stores editable season ranking data in `data/longtrack-db.json`.
+[http://localhost:3000/admin/login](http://localhost:3000/admin/login)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+編集データは `data/longtrack-db.json` に保存されます。公開用の初期データとしても使うため、このJSONファイルは削除しないでください。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 主な構成
 
-## Learn More
+- `app/page.tsx`: トップページ
+- `app/components/SiteHeader.tsx`: 共通ナビゲーション
+- `app/records/`: 歴代ランキング、今季PBランキング、新入生ランキング
+- `app/players/`: 選手一覧、選手個人ページ
+- `app/admin/`: 管理画面、ログイン、保存処理
+- `app/lib/db.ts`: ローカルJSON DBの読み書き
+- `app/records/data.ts`: 静的なランキング・選手データ
+- `data/longtrack-db.json`: 管理画面で編集するランキング・選手データ
+- `public/track.jpg`: トップページのヒーロー画像
 
-To learn more about Next.js, take a look at the following resources:
+## 本番環境で必要な環境変数
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `ADMIN_PASSWORD`
+- `ADMIN_SESSION_SECRET`

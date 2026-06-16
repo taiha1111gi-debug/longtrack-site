@@ -29,7 +29,7 @@ export default function CurrentSeason5000mPage() {
             今季男子5000mランキング
           </h1>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-            2026年シーズンの男子5000m上位記録を記載しています。(～13:30)
+            2026年シーズン（4月1日以降）の男子5000m上位記録を記載しています。(～13:30)
           </p>
           <RankingTable records={records} />
           <LastUpdated value={recordsLastChecked.records5000m} />

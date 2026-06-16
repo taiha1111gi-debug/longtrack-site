@@ -28,6 +28,9 @@ export function SiteHeader() {
           <HeaderLink href="/">ホーム</HeaderLink>
           <Dropdown label="競技一覧" items={eventLinks} widthClass="w-64" />
           <Dropdown label="今季PBランキング" items={rankingLinks} widthClass="w-64" />
+          <HeaderLink href="/records/freshman-2027-5000">
+            2027新入生 高校5000mランキング
+          </HeaderLink>
         </nav>
 
         <details className="group relative md:hidden">
@@ -49,6 +52,9 @@ export function SiteHeader() {
             <MobileLink href="/">ホーム</MobileLink>
             <MobileDropdown label="競技一覧" items={eventLinks} />
             <MobileDropdown label="今季PBランキング" items={rankingLinks} />
+            <MobileLink href="/records/freshman-2027-5000">
+              2027新入生 高校5000mランキング
+            </MobileLink>
           </nav>
         </details>
       </div>

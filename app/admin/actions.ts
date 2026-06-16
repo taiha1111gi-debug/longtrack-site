@@ -60,6 +60,7 @@ export async function updateRecordAction(formData: FormData) {
     team: String(formData.get("team") ?? ""),
     venue: String(formData.get("venue") ?? ""),
     date: String(formData.get("date") ?? ""),
+    destination: String(formData.get("destination") ?? ""),
     note: String(formData.get("note") ?? ""),
     sourceUrl: String(formData.get("sourceUrl") ?? ""),
     sourceName: String(formData.get("sourceName") ?? ""),
@@ -76,6 +77,8 @@ export async function updateRecordAction(formData: FormData) {
 
   revalidatePath("/records/5000m/season");
   revalidatePath("/records/10000m/season");
+  revalidatePath("/records/freshman-2027-5000");
+  revalidatePath("/");
   revalidatePath("/admin");
   redirectAdmin();
 }
@@ -100,6 +103,7 @@ export async function updateRecordsAction(formData: FormData) {
     team: String(formData.get(`rows.${index}.team`) ?? ""),
     venue: String(formData.get(`rows.${index}.venue`) ?? ""),
     date: String(formData.get(`rows.${index}.date`) ?? ""),
+    destination: String(formData.get(`rows.${index}.destination`) ?? ""),
     note: String(formData.get(`rows.${index}.note`) ?? ""),
     sourceUrl: String(formData.get(`rows.${index}.sourceUrl`) ?? ""),
     sourceName: String(formData.get(`rows.${index}.sourceName`) ?? ""),
@@ -119,6 +123,8 @@ export async function updateRecordsAction(formData: FormData) {
 
   revalidatePath("/records/5000m/season");
   revalidatePath("/records/10000m/season");
+  revalidatePath("/records/freshman-2027-5000");
+  revalidatePath("/");
   revalidatePath("/admin");
   redirectAdmin();
 }
@@ -142,6 +148,7 @@ export async function addRecordAction(formData: FormData) {
     team: String(formData.get("team") ?? ""),
     venue: String(formData.get("venue") ?? ""),
     date: String(formData.get("date") ?? ""),
+    destination: String(formData.get("destination") ?? ""),
     note: String(formData.get("note") ?? ""),
     sourceUrl: String(formData.get("sourceUrl") ?? ""),
     sourceName: String(formData.get("sourceName") ?? ""),
@@ -158,6 +165,8 @@ export async function addRecordAction(formData: FormData) {
 
   revalidatePath("/records/5000m/season");
   revalidatePath("/records/10000m/season");
+  revalidatePath("/records/freshman-2027-5000");
+  revalidatePath("/");
   revalidatePath("/admin");
   redirectAdmin();
 }
@@ -215,6 +224,7 @@ function normalizeRecordInput<T extends Partial<EditableRecord>>(record: T) {
     team: String(record.team ?? "").trim(),
     venue: String(record.venue ?? "").trim(),
     date: normalizeDate(String(record.date ?? "")),
+    destination: String(record.destination ?? "").trim(),
     note: String(record.note ?? "").trim(),
     sourceUrl: String(record.sourceUrl ?? "").trim(),
     sourceName: String(record.sourceName ?? "").trim(),
@@ -285,7 +295,11 @@ function redirectAdmin(message?: string): never {
 }
 
 function isRankingGroup(value: string): value is EditableRecord["groupId"] {
-  return value === "season-5000" || value === "season-10000";
+  return (
+    value === "season-5000" ||
+    value === "season-10000" ||
+    value === "freshman-2027-5000"
+  );
 }
 
 function isCareerHistoryItem(item: {

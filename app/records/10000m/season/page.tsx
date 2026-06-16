@@ -29,7 +29,7 @@ export default function CurrentSeason10000mPage() {
             今季男子10000mランキング
           </h1>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-            2026年シーズンの男子10000m上位記録を記載しています。(～28:10)
+            2026年シーズン（4月1日以降）の男子10000m上位記録を記載しています。(～28:10)
           </p>
           <RankingTable records={records} />
           <LastUpdated value={recordsLastChecked.records10000m} />
