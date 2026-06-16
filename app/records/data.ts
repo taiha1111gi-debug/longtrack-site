@@ -14,6 +14,25 @@
   verificationStatus?: "confirmed" | "checking" | "unverified";
 };
 
+export type PublicRankingRecord = Omit<
+  RankingRecord,
+  "sourceUrl" | "sourceName" | "verifiedAt" | "verificationStatus"
+>;
+
+export function toPublicRankingRecords(
+  records: RankingRecord[],
+): PublicRankingRecord[] {
+  return records.map(
+    ({
+      sourceUrl: _sourceUrl,
+      sourceName: _sourceName,
+      verifiedAt: _verifiedAt,
+      verificationStatus: _verificationStatus,
+      ...publicRecord
+    }) => publicRecord,
+  );
+}
+
 export type PlayerProfile = {
   slug: string;
   name: string;

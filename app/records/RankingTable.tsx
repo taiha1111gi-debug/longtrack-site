@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { formatDisplayDate, formatDisplayTime } from "../lib/displayFormat";
-import type { RankingRecord } from "./data";
+import type { PublicRankingRecord } from "./data";
 
-export function RankingTable({ records }: { records: RankingRecord[] }) {
+export function RankingTable({ records }: { records: PublicRankingRecord[] }) {
   const pathname = usePathname();
   const playerHref = (slug: string) =>
     `/players/${slug}?from=${encodeURIComponent(pathname)}`;

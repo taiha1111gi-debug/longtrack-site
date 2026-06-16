@@ -1,6 +1,6 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { SiteHeader } from "../../components/SiteHeader";
-import { records10000, recordsLastChecked } from "../data";
+import { records10000, recordsLastChecked, toPublicRankingRecords } from "../data";
 import { RankingTable } from "../RankingTable";
 import { LastUpdated } from "../LastUpdated";
 
@@ -25,7 +25,7 @@ export default function Records10000mPage() {
           <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
             男子10000mの歴代上位記録をまとめています。
           </p>
-          <RankingTable records={records10000} />
+          <RankingTable records={toPublicRankingRecords(records10000)} />
           <LastUpdated value={recordsLastChecked.records10000m} />
         </section>
       </div>

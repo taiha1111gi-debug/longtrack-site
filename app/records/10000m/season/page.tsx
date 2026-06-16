@@ -1,7 +1,7 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { SiteHeader } from "../../../components/SiteHeader";
 import { getEditableRecords } from "../../../lib/db";
-import { recordsLastChecked } from "../../data";
+import { recordsLastChecked, toPublicRankingRecords } from "../../data";
 import { RankingTable } from "../../RankingTable";
 import { LastUpdated } from "../../LastUpdated";
 
@@ -31,7 +31,7 @@ export default function CurrentSeason10000mPage() {
           <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
             2026年シーズン（4月1日以降）の男子10000m上位記録を記載しています。(～28:10)
           </p>
-          <RankingTable records={records} />
+          <RankingTable records={toPublicRankingRecords(records)} />
           <LastUpdated value={recordsLastChecked.records10000m} />
         </section>
       </div>
