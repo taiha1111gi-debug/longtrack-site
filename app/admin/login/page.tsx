@@ -1,8 +1,17 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { SiteHeader } from "../../components/SiteHeader";
 import { isAdminLoggedIn, isAuthConfigured } from "../auth";
 import { loginAction } from "../actions";
+
+export const metadata: Metadata = {
+  title: "管理画面ログイン",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 type LoginPageProps = {
   searchParams: Promise<{

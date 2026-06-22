@@ -1,8 +1,18 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "../../components/SiteHeader";
 import { records5000, recordsLastChecked, toPublicRankingRecords } from "../data";
 import { RankingTable } from "../RankingTable";
 import { LastUpdated } from "../LastUpdated";
+
+export const metadata: Metadata = {
+  title: "男子5000m歴代ランキング",
+  description:
+    "日本男子5000mの歴代上位記録、選手名、記録、所属、大会・場所、日付をまとめたランキングページです。",
+  alternates: {
+    canonical: "/records/5000m",
+  },
+};
 
 export default function Records5000mPage() {
   return (

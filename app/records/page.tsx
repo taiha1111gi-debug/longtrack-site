@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "../components/SiteHeader";
+
+export const metadata: Metadata = {
+  title: "今季PBランキング",
+  description:
+    "2026年シーズンの日本男子5000m・10000m今季PBランキングへの入口ページです。",
+  alternates: {
+    canonical: "/records",
+  },
+};
 
 const rankingPages = [
   {

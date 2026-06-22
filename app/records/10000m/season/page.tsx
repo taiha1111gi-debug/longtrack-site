@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "../../../components/SiteHeader";
 import { getEditableRecords } from "../../../lib/db";
 import { recordsLastChecked, toPublicRankingRecords } from "../../data";
 import { RankingTable } from "../../RankingTable";
 import { LastUpdated } from "../../LastUpdated";
+
+export const metadata: Metadata = {
+  title: "今季男子10000mランキング",
+  description:
+    "2026年4月1日以降の日本男子10000m上位記録をまとめた今季PBランキングページです。",
+  alternates: {
+    canonical: "/records/10000m/season",
+  },
+};
 
 export const dynamic = "force-dynamic";
 

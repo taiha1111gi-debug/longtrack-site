@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+﻿import type { Metadata } from "next";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { SiteHeader } from "../components/SiteHeader";
 import {
@@ -11,6 +12,14 @@ import { createPlayerProfiles } from "../records/data";
 import { isAdminLoggedIn } from "./auth";
 import { addRecordAction, logoutAction, updateRecordsAction } from "./actions";
 import { PlayerProfileEditor } from "./PlayerProfileEditor";
+
+export const metadata: Metadata = {
+  title: "管理画面",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function AdminPage({
   searchParams,

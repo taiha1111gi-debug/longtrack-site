@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "../components/SiteHeader";
+
+export const metadata: Metadata = {
+  title: "競技一覧",
+  description:
+    "日本男子5000m・10000mの歴代ランキングページへ移動できる競技一覧ページです。",
+  alternates: {
+    canonical: "/players",
+  },
+};
 
 const trackLinks = [
   {

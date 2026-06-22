@@ -1,4 +1,5 @@
-﻿import { notFound } from "next/navigation";
+﻿import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { BackButton } from "../../components/BackButton";
 import { SiteHeader } from "../../components/SiteHeader";
 import { formatDisplayDate, formatDisplayTime } from "../../lib/displayFormat";
@@ -20,6 +21,31 @@ type PlayerDetailPageProps = {
 
 export const dynamic = "force-dynamic";
 
+export async function generateMetadata({
+  params,
+}: PlayerDetailPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const player = getPlayerProfileBySlug(
+    slug,
+    getAllEditableRecords(),
+    getPlayerProfileOverrides(),
+  );
+
+  if (!player) {
+    return {
+      title: "選手プロフィール",
+      description: "日本男子長距離選手のプロフィールページです。",
+    };
+  }
+
+  return {
+    title: `${player.name} | 選手プロフィール`,
+    description: `${player.name}の5000m・10000m自己ベスト、年代別PB、出身・所属情報をまとめた選手プロフィールページです。`,
+    alternates: {
+      canonical: `/players/${slug}`,
+    },
+  };
+}
 function getSafeBackHref(from: string | string[] | undefined) {
   const href = Array.isArray(from) ? from[0] : from;
 

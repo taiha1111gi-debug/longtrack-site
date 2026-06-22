@@ -1,6 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "./components/SiteHeader";
+
+export const metadata: Metadata = {
+  title: "日本男子長距離記録サイト",
+  description:
+    "日本男子5000m・10000mの歴代記録、今季ランキング、選手情報、大会メモをまとめた陸上長距離アーカイブサイトです。",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const eraHighlights = [
   {

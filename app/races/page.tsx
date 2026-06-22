@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import { SiteHeader } from "../components/SiteHeader";
+
+export const metadata: Metadata = {
+  title: "大会情報",
+  description:
+    "日本男子長距離の記録が生まれやすい大会やシリーズの特徴をまとめた大会情報ページです。",
+  alternates: {
+    canonical: "/races",
+  },
+};
 
 const races = [
   {

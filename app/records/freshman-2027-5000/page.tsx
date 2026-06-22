@@ -1,6 +1,16 @@
+import type { Metadata } from "next";
 import { FreshmanRankingTable } from "../../components/FreshmanRankingTable";
 import { SiteHeader } from "../../components/SiteHeader";
 import { getEditableRecords } from "../../lib/db";
+
+export const metadata: Metadata = {
+  title: "2027新入生 高校5000mランキング",
+  description:
+    "2027年度新入生世代の高校男子5000m記録をまとめたランキングページです。選手名、記録、所属高校、進路を確認できます。",
+  alternates: {
+    canonical: "/records/freshman-2027-5000",
+  },
+};
 
 export default function Freshman2027RecordsPage() {
   const records = getEditableRecords("freshman-2027-5000");
