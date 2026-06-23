@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BackButton } from "../../components/BackButton";
+import { RelatedRankings } from "../../components/RelatedRankings";
 import { SiteHeader } from "../../components/SiteHeader";
 import { formatDisplayDate, formatDisplayTime } from "../../lib/displayFormat";
 import { getAllEditableRecords, getPlayerProfileOverrides } from "../../lib/db";
@@ -39,8 +40,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${player.name} | 選手プロフィール`,
-    description: `${player.name}の5000m・10000m自己ベスト、年代別PB、出身・所属情報をまとめた選手プロフィールページです。`,
+    title: `${player.name}｜5000m・10000m自己ベスト`,
+    description: `${player.name}の5000m・10000m自己ベスト、記録日、年代別PB、出身校、所属チーム遍歴をまとめた日本男子長距離選手プロフィールです。`,
     alternates: {
       canonical: `/players/${slug}`,
     },
@@ -75,14 +76,19 @@ export default async function PlayerDetailPage({
   return (
     <main className="min-h-screen bg-[#f4f7fb] text-slate-900">
       <SiteHeader />
-      <div className="mx-auto max-w-4xl px-6 pb-12 pt-28 sm:px-10">
+      <div className="mx-auto max-w-4xl px-4 pb-12 pt-24 sm:px-10 sm:pt-28">
         <BackButton href={backHref} label="前のページに戻る" />
 
-        <article className="mt-6 rounded-md border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+        <article className="mt-5 rounded-md border border-slate-200 bg-white p-4 shadow-sm sm:mt-6 sm:p-8">
           <p className="text-sm font-bold tracking-[0.14em] text-cyan-700">
             PLAYER PROFILE
           </p>
-          <h1 className="mt-2 text-4xl font-black">{player.name}</h1>
+          <h1 className="mt-2 text-3xl font-black leading-tight sm:text-4xl">
+            {player.name}
+          </h1>
+          <p className="mt-2 text-sm font-bold text-slate-500">
+            日本男子長距離選手｜5000m・10000m自己ベスト
+          </p>
 
           <div className="mt-8 rounded-md bg-slate-100 p-4 md:hidden">
             <p className="text-xs font-bold tracking-[0.14em] text-slate-500">
@@ -181,6 +187,7 @@ export default async function PlayerDetailPage({
             注: 年代別PBを確認できていない項目は「確認中」としています。一部の最新記録は当サイトのランキング掲載データを補助的に表示しています。
           </p>
         </article>
+        <RelatedRankings />
       </div>
     </main>
   );

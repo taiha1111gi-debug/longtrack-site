@@ -15,15 +15,22 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://main.d2913wee5pzbjt.amplifyapp.com"),
   title: {
-    default: "Long Track Records | 日本男子長距離記録サイト",
-    template: "%s | Long Track Records",
+    default: "日本男子5000m・10000m記録 | Long Track Records",
+    template: "%s | 日本男子長距離記録",
   },
   description:
-    "日本男子5000m・10000mの歴代記録、今季ランキング、選手情報、大会メモをまとめた陸上長距離アーカイブサイトです。",
+    "日本男子5000m・10000mの歴代ランキング、2026年今季PB、選手プロフィール、大会情報をまとめた陸上長距離記録サイトです。",
+  keywords: [
+    "日本男子5000m",
+    "日本男子10000m",
+    "5000m歴代ランキング",
+    "10000m歴代ランキング",
+    "陸上長距離",
+  ],
   openGraph: {
-    title: "Long Track Records | 日本男子長距離記録サイト",
+    title: "日本男子5000m・10000m記録 | Long Track Records",
     description:
-      "日本男子5000m・10000mの歴代記録、今季ランキング、選手情報、大会メモをまとめた陸上長距離アーカイブサイトです。",
+      "日本男子5000m・10000mの歴代ランキング、2026年今季PB、選手情報をまとめた陸上長距離記録サイトです。",
     url: "/",
     siteName: "Long Track Records",
     locale: "ja_JP",

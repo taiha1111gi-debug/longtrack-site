@@ -12,16 +12,16 @@ export function RankingTable({ records }: { records: PublicRankingRecord[] }) {
 
   return (
     <>
-      <p className="mt-5 text-xs font-bold leading-5 text-slate-500 md:hidden">
-        表示例: 選手名（記録当時の所属） タイム
-        <br />
-        大会・場所 / 日付
-      </p>
+      <div className="mt-5 rounded-md border border-slate-200 bg-slate-50 px-3 py-2.5 text-xs leading-5 text-slate-600 md:hidden">
+        <p className="font-black text-slate-800">スマホ表示の見方</p>
+        <p>順位　選手名（記録当時の所属）　記録</p>
+        <p>大会・場所 ／ 日付</p>
+      </div>
       <div className="mt-3 space-y-3 md:hidden">
         {records.map((runner) => (
           <article
             key={`${runner.rank}-${runner.slug}-${runner.record}-card`}
-            className="rounded-md border border-slate-200 bg-white px-4 py-3 shadow-sm"
+            className="rounded-md border border-slate-200 bg-white px-3 py-3 shadow-sm"
           >
             <div className="flex items-baseline justify-between gap-3">
               <div className="min-w-0">
@@ -30,11 +30,11 @@ export function RankingTable({ records }: { records: PublicRankingRecord[] }) {
                 </span>
                 <Link
                   href={playerHref(runner.slug)}
-                  className="text-base font-black text-slate-900 underline decoration-slate-900 decoration-2 underline-offset-4 hover:text-cyan-700"
+                  className="break-words text-base font-black leading-6 text-slate-900 underline decoration-slate-900 decoration-2 underline-offset-4 hover:text-cyan-700"
                 >
                   {runner.name}
                 </Link>
-                <span className="ml-1 text-xs font-bold text-slate-500">
+                <span className="ml-1 break-words text-xs font-bold text-slate-500">
                   （{runner.team}）
                 </span>
               </div>
@@ -42,7 +42,7 @@ export function RankingTable({ records }: { records: PublicRankingRecord[] }) {
                 {formatDisplayTime(runner.record)}
               </p>
             </div>
-            <p className="mt-2 text-xs font-bold leading-5 text-slate-600">
+            <p className="mt-2 break-words border-t border-slate-100 pt-2 text-xs font-bold leading-5 text-slate-600">
               {runner.venue}
               <span className="mx-2 text-slate-400">/</span>
               <span className="whitespace-nowrap">
@@ -74,7 +74,7 @@ export function RankingTable({ records }: { records: PublicRankingRecord[] }) {
             {records.map((runner) => (
               <tr
                 key={`${runner.rank}-${runner.slug}-${runner.record}`}
-                className="border-b border-slate-200"
+                className="border-b border-slate-200 odd:bg-white even:bg-slate-50/70 hover:bg-cyan-50/60"
               >
                 <td className={tdClass}>{runner.rank}</td>
                 <td className={`${tdClass} font-bold`}>
@@ -101,6 +101,6 @@ export function RankingTable({ records }: { records: PublicRankingRecord[] }) {
 }
 
 const thClass = "px-4 py-3 font-bold whitespace-nowrap";
-const tdClass = "px-4 py-4 align-top";
+const tdClass = "px-4 py-4 align-top leading-6";
 
 

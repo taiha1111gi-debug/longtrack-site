@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { RelatedRankings } from "./components/RelatedRankings";
 import { SiteHeader } from "./components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "日本男子長距離記録サイト",
+  title: "日本男子5000m・10000m記録｜歴代・2026年ランキング",
   description:
-    "日本男子5000m・10000mの歴代記録、今季ランキング、選手情報、大会メモをまとめた陸上長距離アーカイブサイトです。",
+    "日本男子5000m・10000mの歴代ランキング、2026年今季PB、選手プロフィール、記録が狙いやすい国内大会をまとめています。",
   alternates: {
     canonical: "/",
   },
@@ -101,7 +102,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#f4f7fb] text-slate-900">
       <SiteHeader />
 
-      <section id="top" className="relative min-h-[620px] overflow-hidden">
+      <section id="top" className="relative min-h-[560px] overflow-hidden sm:min-h-[620px]">
         <Image
           src="/track.jpg"
           alt="陸上トラック"
@@ -111,41 +112,41 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/55 to-slate-950/25" />
 
-        <div className="relative mx-auto flex min-h-[620px] max-w-7xl flex-col justify-end px-6 pb-14 pt-28 sm:px-10 lg:px-12">
+        <div className="relative mx-auto flex min-h-[560px] max-w-7xl flex-col justify-end px-4 pb-10 pt-24 sm:min-h-[620px] sm:px-10 sm:pb-14 lg:px-12">
           <p className="mb-4 text-sm font-bold tracking-[0.18em] text-cyan-200">
-            5000m / 10000m
+            LONG TRACK RECORDS
           </p>
-          <h1 className="max-w-4xl text-5xl font-black leading-tight text-white sm:text-6xl lg:text-7xl">
-            Track Distance Records
+          <h1 className="max-w-4xl text-4xl font-black leading-tight text-white sm:text-6xl lg:text-7xl">
+            日本男子5000m・10000m記録
           </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-100 sm:text-xl">
-            <span>日本男子長距離の記録・選手情報・大会メモをまとめた</span>
+          <p className="mt-5 max-w-2xl text-base leading-7 text-slate-100 sm:text-xl sm:leading-8">
+            <span>歴代ランキング・2026年今季PB・選手情報をまとめた</span>
             <br />
-            <span>5000m・10000m中心のアーカイブサイト</span>
+            <span>日本男子長距離の記録アーカイブ</span>
           </p>
-          <div className="mt-7 flex flex-wrap gap-3">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link
               href="/players"
-              className="inline-flex w-fit rounded-md bg-white px-4 py-3 text-sm font-black text-slate-950 hover:bg-cyan-100"
+              className="inline-flex w-full justify-center rounded-md bg-white px-4 py-3 text-sm font-black text-slate-950 hover:bg-cyan-100 sm:w-fit"
             >
-              歴代記録へ
+              日本男子歴代ランキングへ
             </Link>
             <Link
               href="/records"
-              className="inline-flex w-fit rounded-md border border-white/70 bg-slate-950/40 px-4 py-3 text-sm font-black text-white hover:bg-white hover:text-slate-950"
+              className="inline-flex w-full justify-center rounded-md border border-white/70 bg-slate-950/40 px-4 py-3 text-sm font-black text-white hover:bg-white hover:text-slate-950 sm:w-fit"
             >
-              今季PBランキングへ
+              2026年ランキングへ
             </Link>
             <Link
               href="/records/freshman-2027-5000"
-              className="inline-flex w-fit rounded-md border border-cyan-200 bg-cyan-200/15 px-4 py-3 text-sm font-black text-white hover:bg-cyan-100 hover:text-slate-950"
+              className="inline-flex w-full justify-center rounded-md border border-cyan-200 bg-cyan-200/15 px-4 py-3 text-center text-sm font-black text-white hover:bg-cyan-100 hover:text-slate-950 sm:w-fit"
             >
-              2027新入生 高校5000mランキングへ
+              2027年度新入生 高校男子5000mへ
             </Link>          </div>
         </div>
       </section>
 
-      <div className="mx-auto max-w-7xl px-6 py-10 sm:px-10 lg:px-12">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-10 sm:py-10 lg:px-12">
         <section id="overview" className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="rounded-md border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm font-bold tracking-[0.14em] text-cyan-700">
@@ -187,7 +188,7 @@ export default function Home() {
           <h2 className="mt-1 text-2xl font-black">年代別ハイライト</h2>
           <div className="mt-5 grid gap-4 lg:grid-cols-2">
             {eraHighlights.map((item) => (
-              <article key={item.year} className="grid grid-cols-[82px_1fr] gap-4 rounded-md bg-slate-100 p-4">
+              <article key={item.year} className="grid grid-cols-[72px_1fr] gap-3 rounded-md bg-slate-100 p-4 sm:grid-cols-[82px_1fr] sm:gap-4">
                 <p className="rounded-md bg-slate-900 px-3 py-2 text-center text-sm font-black text-white">
                   {item.year}
                 </p>
@@ -256,6 +257,8 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <RelatedRankings />
       </div>
     </main>
   );

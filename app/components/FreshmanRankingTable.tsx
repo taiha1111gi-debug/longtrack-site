@@ -4,18 +4,23 @@ import type { RankingRecord } from "../records/data";
 export function FreshmanRankingTable({ records }: { records: RankingRecord[] }) {
   return (
     <>
+      <div className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2.5 text-xs leading-5 text-slate-600 md:hidden">
+        <p className="font-black text-slate-800">スマホ表示の見方</p>
+        <p>順位　選手名（所属高校）　記録</p>
+        <p>大会・場所 ／ 日付 ／ 進路</p>
+      </div>
       <div className="mt-5 space-y-3 md:hidden">
         {records.map((runner) => (
           <article
             key={`${runner.rank}-${runner.slug}-${runner.record}-freshman-card`}
-            className="rounded-md border border-slate-200 bg-white px-4 py-3 shadow-sm"
+            className="rounded-md border border-slate-200 bg-white px-3 py-3 shadow-sm"
           >
             <div className="flex items-baseline justify-between gap-3">
               <div className="min-w-0">
                 <span className="mr-2 text-xs font-black tracking-[0.12em] text-cyan-700">
                   {runner.rank}位
                 </span>
-                <span className="text-base font-black text-slate-900">
+                <span className="break-words text-base font-black leading-6 text-slate-900">
                   {runner.name}
                 </span>
                 <span className="ml-1 text-xs font-bold text-slate-500">
@@ -26,7 +31,7 @@ export function FreshmanRankingTable({ records }: { records: RankingRecord[] }) 
                 {formatDisplayTime(runner.record)}
               </p>
             </div>
-            <p className="mt-2 text-xs font-bold leading-5 text-slate-600">
+            <p className="mt-2 break-words border-t border-slate-100 pt-2 text-xs font-bold leading-5 text-slate-600">
               {displayOptional(runner.venue, "大会・場所未確認")}
               <span className="mx-2 text-slate-400">/</span>
               <span className="whitespace-nowrap">
@@ -57,7 +62,7 @@ export function FreshmanRankingTable({ records }: { records: RankingRecord[] }) 
             {records.map((runner) => (
               <tr
                 key={`${runner.rank}-${runner.slug}-${runner.record}-freshman`}
-                className="border-b border-slate-200"
+                className="border-b border-slate-200 odd:bg-white even:bg-slate-50/70 hover:bg-cyan-50/60"
               >
                 <td className={rankingTdClass}>{runner.rank}</td>
                 <td className={`${rankingTdClass} font-bold`}>{runner.name}</td>
@@ -86,4 +91,4 @@ function displayOptional(value: string | undefined, fallback: string) {
 }
 
 const rankingThClass = "px-4 py-3 font-bold whitespace-nowrap";
-const rankingTdClass = "px-4 py-4 align-top";
+const rankingTdClass = "px-4 py-4 align-top leading-6";

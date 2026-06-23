@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedRankings } from "../../components/RelatedRankings";
 import { SiteHeader } from "../../components/SiteHeader";
 import { records10000, recordsLastChecked, toPublicRankingRecords } from "../data";
 import { RankingTable } from "../RankingTable";
 import { LastUpdated } from "../LastUpdated";
 
 export const metadata: Metadata = {
-  title: "男子10000m歴代ランキング",
+  title: "日本男子10000m歴代ランキング｜歴代上位記録",
   description:
-    "日本男子10000mの歴代上位記録、選手名、記録、所属、大会・場所、日付をまとめたランキングページです。",
+    "日本男子10000mの歴代上位記録を、順位・選手名・タイム・記録当時の所属・大会・日付とともに掲載しています。",
   alternates: {
     canonical: "/records/10000m",
   },
@@ -18,26 +19,27 @@ export default function Records10000mPage() {
   return (
     <main className="min-h-screen bg-[#f4f7fb] text-slate-900">
       <SiteHeader />
-      <div className="mx-auto max-w-7xl px-6 pb-12 pt-28 sm:px-10 lg:px-12">
+      <div className="mx-auto max-w-7xl px-4 pb-12 pt-24 sm:px-10 sm:pt-28 lg:px-12">
         <Link
           href="/players"
           className="inline-flex rounded-md bg-slate-900 px-4 py-3 text-sm font-bold text-white hover:bg-slate-700"
         >
           競技一覧へ戻る
         </Link>
-        <section className="mt-6 rounded-md border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+        <section className="mt-5 rounded-md border border-slate-200 bg-white p-4 shadow-sm sm:mt-6 sm:p-6">
           <p className="text-sm font-bold tracking-[0.14em] text-cyan-700">
             MEN 10000m RECORDS
           </p>
-          <h1 className="mt-1 text-3xl font-black sm:text-4xl">
-            男子10000m歴代ランキング
+          <h1 className="mt-1 text-3xl font-black leading-tight sm:text-4xl">
+            日本男子10000m歴代ランキング
           </h1>
-          <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-            男子10000mの歴代上位記録をまとめています。
+          <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
+            日本男子10000mの歴代上位記録を、記録当時の所属・大会・場所・日付とともに掲載しています。選手名から個人プロフィールも確認できます。
           </p>
           <RankingTable records={toPublicRankingRecords(records10000)} />
           <LastUpdated value={recordsLastChecked.records10000m} />
         </section>
+        <RelatedRankings currentPath="/records/10000m" />
       </div>
     </main>
   );

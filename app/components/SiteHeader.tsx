@@ -7,27 +7,27 @@ type NavItem = {
 };
 
 const eventLinks: NavItem[] = [
-  { href: "/records/5000m", label: "男子5000m歴代ランキング" },
-  { href: "/records/10000m", label: "男子10000m歴代ランキング" },
+  { href: "/records/5000m", label: "日本男子5000m歴代ランキング" },
+  { href: "/records/10000m", label: "日本男子10000m歴代ランキング" },
 ];
 
 const rankingLinks: NavItem[] = [
-  { href: "/records/5000m/season", label: "今季男子5000mランキング" },
-  { href: "/records/10000m/season", label: "今季男子10000mランキング" },
+  { href: "/records/5000m/season", label: "2026年 日本男子5000mランキング" },
+  { href: "/records/10000m/season", label: "2026年 日本男子10000mランキング" },
 ];
 
 export function SiteHeader() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/15 bg-slate-950/85 text-white backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-12">
-        <Link href="/" className="text-sm font-black tracking-[0.16em]">
-          LONG TRACK
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-10 lg:px-12">
+        <Link href="/" className="text-sm font-black tracking-[0.12em] sm:tracking-[0.16em]">
+          LONG TRACK RECORDS
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="メインナビゲーション">
           <HeaderLink href="/">ホーム</HeaderLink>
-          <Dropdown label="競技一覧" items={eventLinks} widthClass="w-64" />
-          <Dropdown label="今季PBランキング" items={rankingLinks} widthClass="w-64" />
+          <Dropdown label="歴代ランキング" items={eventLinks} widthClass="w-72" />
+          <Dropdown label="2026年ランキング" items={rankingLinks} widthClass="w-72" />
           <HeaderLink href="/records/freshman-2027-5000">
             2027新入生 高校5000mランキング
           </HeaderLink>
@@ -50,8 +50,8 @@ export function SiteHeader() {
             aria-label="モバイルナビゲーション"
           >
             <MobileLink href="/">ホーム</MobileLink>
-            <MobileDropdown label="競技一覧" items={eventLinks} />
-            <MobileDropdown label="今季PBランキング" items={rankingLinks} />
+            <MobileDropdown label="歴代ランキング" items={eventLinks} />
+            <MobileDropdown label="2026年ランキング" items={rankingLinks} />
             <MobileLink href="/records/freshman-2027-5000">
               2027新入生 高校5000mランキング
             </MobileLink>

@@ -23,4 +23,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+a,
+button,
+summary {
+  outline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 3px solid #0891b2;
 }
