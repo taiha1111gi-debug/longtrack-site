@@ -27,7 +27,7 @@ export default function Freshman2027RecordsPage() {
           2027年度新入生 高校男子5000mランキング
         </h1>
         <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
-          現在（2026年）高校3年生の男子5000m記録を対象にしたランキングです。掲載基準は14分10秒00までで、進路は判明後に追記します。
+          現在（2026年）高校3年生の男子5000m記録を対象にしたランキングです。掲載基準は15分00秒00までで、進路は判明後に追記します。
         </p>
 
         <section className="mt-6 rounded-md border border-slate-200 bg-white p-3 shadow-sm sm:mt-8 sm:p-6">

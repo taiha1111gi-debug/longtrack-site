@@ -12,6 +12,8 @@ import { createPlayerProfiles } from "../records/data";
 import { isAdminLoggedIn } from "./auth";
 import { addRecordAction, logoutAction, updateRecordsAction } from "./actions";
 import { PlayerProfileEditor } from "./PlayerProfileEditor";
+import { TeamCandidateCell, TeamCandidateField } from "./HighSchoolTeamInput";
+import { ImportPreviewTool } from "./ImportPreviewTool";
 
 export const metadata: Metadata = {
   title: "管理画面",
@@ -95,6 +97,7 @@ export default async function AdminPage({
           </Link>
         </div>
 
+        <ImportPreviewTool />
         <AddRecordForm />
 
         <EditableRanking title="今季男子5000mランキング" records={records5000} groupId="season-5000" />
@@ -132,7 +135,7 @@ function AddRecordForm() {
         <Field label="slug" name="slug" value="" />
         <Field label="選手名" name="name" value="" />
         <Field label="記録" name="record" value="" />
-        <Field label="所属" name="team" value="" />
+        <TeamCandidateField label="所属" name="team" value="" />
         <Field label="大会・場所" name="venue" value="" />
         <Field label="日付" name="date" value="" />
         <Field label="進路" name="destination" value="" />
@@ -186,6 +189,9 @@ function EditableRanking({
             まとめて保存
           </button>
         </div>
+        <p className="mt-2 text-xs font-bold text-slate-500">
+          所属の末尾が「高」または「校」の行は、高校候補として表示されます。保存データ自体は変更しません。
+        </p>
         <input type="hidden" name="groupId" value={groupId} />
         <input type="hidden" name="rowCount" value={records.length} />
 
@@ -226,7 +232,7 @@ function EditableRanking({
                     <CellInput name={`rows.${index}.record`} value={record.record} strong />
                   </td>
                   <td className={tableCellClass}>
-                    <CellInput name={`rows.${index}.team`} value={record.team} />
+                    <TeamCandidateCell name={`rows.${index}.team`} value={record.team} />
                   </td>
                   <td className={tableCellClass}>
                     <CellInput name={`rows.${index}.venue`} value={record.venue} />
