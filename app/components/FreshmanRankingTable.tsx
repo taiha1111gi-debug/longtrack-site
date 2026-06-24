@@ -70,11 +70,15 @@ export function FreshmanRankingTable({ records }: { records: RankingRecord[] }) 
                   {formatDisplayTime(runner.record)}
                 </td>
                 <td className={rankingTdClass}>{runner.team}</td>
-                <td className={rankingTdClass}>{displayOptional(runner.venue, "未確認")}</td>
+                <td className={rankingTdClass}>
+                  {displayOptional(runner.venue, "未確認")}
+                </td>
                 <td className={rankingTdClass}>
                   {displayOptional(formatDisplayDate(runner.date), "未確認")}
                 </td>
-                <td className={rankingTdClass}>{displayOptional(runner.destination, "")}</td>
+                <td className={rankingTdClass}>
+                  {displayOptional(runner.destination, "")}
+                </td>
               </tr>
             ))}
           </tbody>

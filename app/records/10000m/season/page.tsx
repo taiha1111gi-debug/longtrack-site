@@ -8,7 +8,7 @@ import { RankingTable } from "../../RankingTable";
 import { LastUpdated } from "../../LastUpdated";
 
 export const metadata: Metadata = {
-  title: "2026年 日本男子10000mランキング｜今季PB",
+  title: "2026年 日本男子10000mランキング・今季PB",
   description:
     "2026年4月1日以降の日本男子10000m上位記録を、選手名・タイム・所属・大会・日付とともに掲載する今季PBランキングです。",
   alternates: {
@@ -50,7 +50,3 @@ export default function CurrentSeason10000mPage() {
     </main>
   );
 }
-
-
-
-
