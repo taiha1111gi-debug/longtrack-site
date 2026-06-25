@@ -95,24 +95,33 @@ export async function updateRecordsAction(formData: FormData) {
     throw new Error("Invalid ranking group.");
   }
 
-  const records = Array.from({ length: rowCount }, (_, index) => ({
-    rank: Number(formData.get(`rows.${index}.rank`)),
-    slug: String(formData.get(`rows.${index}.slug`) ?? ""),
-    name: String(formData.get(`rows.${index}.name`) ?? ""),
-    record: String(formData.get(`rows.${index}.record`) ?? ""),
-    team: String(formData.get(`rows.${index}.team`) ?? ""),
-    venue: String(formData.get(`rows.${index}.venue`) ?? ""),
-    date: String(formData.get(`rows.${index}.date`) ?? ""),
-    destination: String(formData.get(`rows.${index}.destination`) ?? ""),
-    note: String(formData.get(`rows.${index}.note`) ?? ""),
-    sourceUrl: String(formData.get(`rows.${index}.sourceUrl`) ?? ""),
-    sourceName: String(formData.get(`rows.${index}.sourceName`) ?? ""),
-    verifiedAt: String(formData.get(`rows.${index}.verifiedAt`) ?? ""),
-    verificationStatus: toVerificationStatus(formData.get(`rows.${index}.verificationStatus`)),
-    delete: formData.get(`rows.${index}.delete`) === "on",
-  }))
-    .filter((record) => !record.delete)
-    .map(({ delete: _delete, ...record }) => normalizeRecordInput(record));
+  const records: RankingRecord[] = Array.from({ length: rowCount }).flatMap(
+    (_, index) => {
+      if (formData.get(`rows.${index}.delete`) === "on") {
+        return [];
+      }
+
+      return [
+        normalizeRecordInput({
+          rank: Number(formData.get(`rows.${index}.rank`)),
+          slug: String(formData.get(`rows.${index}.slug`) ?? ""),
+          name: String(formData.get(`rows.${index}.name`) ?? ""),
+          record: String(formData.get(`rows.${index}.record`) ?? ""),
+          team: String(formData.get(`rows.${index}.team`) ?? ""),
+          venue: String(formData.get(`rows.${index}.venue`) ?? ""),
+          date: String(formData.get(`rows.${index}.date`) ?? ""),
+          destination: String(formData.get(`rows.${index}.destination`) ?? ""),
+          note: String(formData.get(`rows.${index}.note`) ?? ""),
+          sourceUrl: String(formData.get(`rows.${index}.sourceUrl`) ?? ""),
+          sourceName: String(formData.get(`rows.${index}.sourceName`) ?? ""),
+          verifiedAt: String(formData.get(`rows.${index}.verifiedAt`) ?? ""),
+          verificationStatus: toVerificationStatus(
+            formData.get(`rows.${index}.verificationStatus`),
+          ),
+        }),
+      ];
+    },
+  );
   const validationError = validateRecords(records);
 
   if (validationError) {

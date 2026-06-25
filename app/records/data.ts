@@ -22,15 +22,27 @@ export type PublicRankingRecord = Omit<
 export function toPublicRankingRecords(
   records: RankingRecord[],
 ): PublicRankingRecord[] {
-  return records.map(
-    ({
-      sourceUrl: _sourceUrl,
-      sourceName: _sourceName,
-      verifiedAt: _verifiedAt,
-      verificationStatus: _verificationStatus,
-      ...publicRecord
-    }) => publicRecord,
-  );
+  return records.map((record) => {
+    const publicRecord: PublicRankingRecord = {
+      rank: record.rank,
+      slug: record.slug,
+      name: record.name,
+      record: record.record,
+      team: record.team,
+      venue: record.venue,
+      date: record.date,
+    };
+
+    if (record.destination !== undefined) {
+      publicRecord.destination = record.destination;
+    }
+
+    if (record.note !== undefined) {
+      publicRecord.note = record.note;
+    }
+
+    return publicRecord;
+  });
 }
 
 export type PlayerProfile = {
@@ -192,19 +204,6 @@ export const freshmanRecords5000: RankingRecord[] = [
   { rank: 8, slug: "kimura-yumi", name: "木村 悠未", record: "14:09.97", team: "拓大一高", venue: "", date: "", destination: "" },
 ];
 
-
-const playerSlugOrder = Array.from(
-  new Set(
-    [
-      ...records5000,
-      ...currentSeasonRecords5000,
-      ...records10000,
-      ...currentSeasonRecords10000,
-    ].map(
-      (record) => record.slug,
-    ),
-  ),
-);
 
 const noWikipediaEntry = "年代別PBは確認中";
 

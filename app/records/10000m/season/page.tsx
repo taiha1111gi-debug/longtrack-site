@@ -39,9 +39,17 @@ export default function CurrentSeason10000mPage() {
           <h1 className="mt-1 text-3xl font-black leading-tight sm:text-4xl">
             2026年 日本男子10000mランキング
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
-            2026年シーズン（4月1日以降）の日本男子10000m上位記録を掲載しています。掲載基準は28分10秒までです。
-          </p>
+          <div className="mt-4 grid gap-2 text-sm font-bold leading-6 text-slate-600 sm:grid-cols-2">
+            <p className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2">
+              対象: 2026年シーズン（4月1日以降）の日本男子10000m
+            </p>
+            <p className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2">
+              掲載基準:～28分10秒
+            </p>
+            <p className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2 sm:col-span-2">
+              選手名から個人プロフィールも確認できます。
+            </p>
+          </div>
           <RankingTable records={toPublicRankingRecords(records)} />
           <LastUpdated value={recordsLastChecked.records10000m} />
         </section>

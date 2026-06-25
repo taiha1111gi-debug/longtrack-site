@@ -26,9 +26,17 @@ export default function Freshman2027RecordsPage() {
         <h1 className="mt-2 text-3xl font-black leading-tight sm:text-4xl">
           2027年度新入生 高校男子5000mランキング
         </h1>
-        <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
-          現在の高校2年生を対象にした男子5000mランキングです。進路は判明後に追記します。掲載基準: ～14分31秒
-        </p>
+        <div className="mt-4 grid gap-2 text-sm font-bold leading-6 text-slate-600 sm:grid-cols-2">
+          <p className="rounded-md border border-slate-200 bg-white px-3 py-2 shadow-sm">
+            対象: 現在高校3年の男子5000m
+          </p>
+          <p className="rounded-md border border-slate-200 bg-white px-3 py-2 shadow-sm">
+            掲載基準:～14分31秒
+          </p>
+          <p className="rounded-md border border-slate-200 bg-white px-3 py-2 shadow-sm sm:col-span-2">
+            進路は判明後に追記します。
+          </p>
+        </div>
 
         <section className="mt-6 rounded-md border border-slate-200 bg-white p-3 shadow-sm sm:mt-8 sm:p-6">
           <FreshmanRankingTable records={records} />

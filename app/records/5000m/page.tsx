@@ -33,9 +33,17 @@ export default function Records5000mPage() {
           <h1 className="mt-1 text-3xl font-black leading-tight sm:text-4xl">
             日本男子5000m歴代ランキング
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
-            日本男子5000mの歴代上位記録を、記録当時の所属・大会・場所・日付とともに掲載しています。選手名から個人プロフィールも確認できます。
-          </p>
+          <div className="mt-4 grid gap-2 text-sm font-bold leading-6 text-slate-600 sm:grid-cols-2">
+            <p className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2">
+              日本男子5000mの歴代上位記録を掲載しています。
+            </p>
+            <p className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2">
+              記録当時の所属・大会・場所・日付を確認できます。
+            </p>
+            <p className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2 sm:col-span-2">
+              選手名から個人プロフィールも確認できます。
+            </p>
+          </div>
           <RankingTable records={toPublicRankingRecords(records5000)} />
           <LastUpdated value={recordsLastChecked.records5000m} />
         </section>
@@ -44,5 +52,3 @@ export default function Records5000mPage() {
     </main>
   );
 }
-
-

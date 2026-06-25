@@ -333,5 +333,3 @@ function InfoBlock({ title, body }: { title: string; body: string }) {
   );
 }
 
-const rankingThClass = "px-4 py-3 font-bold whitespace-nowrap";
-const rankingTdClass = "px-4 py-4 align-top";
