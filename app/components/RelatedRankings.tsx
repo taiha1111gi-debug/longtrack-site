@@ -52,6 +52,12 @@ export function RelatedRankings({ currentPath }: { currentPath?: string }) {
           </Link>
         ))}
       </div>
+      <Link
+        href="/records"
+        className="mt-4 inline-flex text-sm font-bold text-cyan-800 hover:underline"
+      >
+        すべてのランキングを見る →
+      </Link>
     </nav>
   );
 }

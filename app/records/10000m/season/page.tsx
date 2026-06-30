@@ -1,18 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumbs } from "../../../components/Breadcrumbs";
 import { RelatedRankings } from "../../../components/RelatedRankings";
 import { SiteHeader } from "../../../components/SiteHeader";
 import { getEditableRecords } from "../../../lib/db";
-import { recordsLastChecked, toPublicRankingRecords } from "../../data";
+import { toPublicRankingRecords } from "../../data";
 import { RankingTable } from "../../RankingTable";
 import { LastUpdated } from "../../LastUpdated";
 
+const pageTitle = "2026年 日本男子10000mランキング｜今季PB・最新記録";
+const pageDescription =
+  "2026年4月1日以降の日本男子10000m上位記録を、選手名・タイム・記録当時の所属・大会・場所・日付とともに掲載する今季PBランキングです。";
+
 export const metadata: Metadata = {
-  title: "2026年 日本男子10000mランキング・今季PB",
-  description:
-    "2026年4月1日以降の日本男子10000m上位記録を、選手名・タイム・所属・大会・日付とともに掲載する今季PBランキングです。",
+  title: pageTitle,
+  description: pageDescription,
   alternates: {
     canonical: "/records/10000m/season",
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: "/records/10000m/season",
+    type: "website",
   },
 };
 
@@ -25,9 +35,15 @@ export default function CurrentSeason10000mPage() {
     <main className="min-h-screen bg-[#f4f7fb] text-slate-900">
       <SiteHeader />
       <div className="mx-auto max-w-7xl px-4 pb-12 pt-24 sm:px-10 sm:pt-28 lg:px-12">
+        <Breadcrumbs
+          items={[
+            { label: "ランキング", href: "/records" },
+            { label: "2026年 日本男子10000mランキング", href: "/records/10000m/season" },
+          ]}
+        />
         <Link
           href="/records"
-          className="inline-flex rounded-md bg-slate-900 px-4 py-3 text-sm font-bold text-white hover:bg-slate-700"
+          className="mt-4 inline-flex rounded-md bg-slate-900 px-4 py-3 text-sm font-bold text-white hover:bg-slate-700"
         >
           ランキングへ戻る
         </Link>
@@ -39,19 +55,13 @@ export default function CurrentSeason10000mPage() {
           <h1 className="mt-1 text-3xl font-black leading-tight sm:text-4xl">
             2026年 日本男子10000mランキング
           </h1>
-          <div className="mt-4 grid gap-2 text-sm font-bold leading-6 text-slate-600 sm:grid-cols-2">
-            <p className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2">
-              対象: 2026年シーズン（4月1日以降）の日本男子10000m
-            </p>
-            <p className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2">
-              掲載基準:～28分10秒
-            </p>
-            <p className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2 sm:col-span-2">
-              選手名から個人プロフィールも確認できます。
-            </p>
+          <div className="mt-4 rounded-md border border-slate-200 bg-slate-50 px-3 py-2.5 text-[13px] font-bold leading-6 text-slate-600 shadow-sm sm:px-4 sm:py-3 sm:text-sm sm:leading-7">
+            <p>対象: 2026年シーズン（4月1日以降）の日本男子10000m</p>
+            <p>掲載基準:～28分10秒</p>
+            <p>選手名から個人プロフィールも確認できます。</p>
           </div>
           <RankingTable records={toPublicRankingRecords(records)} />
-          <LastUpdated value={recordsLastChecked.records10000m} />
+          <LastUpdated records={records} />
         </section>
         <RelatedRankings currentPath="/records/10000m/season" />
       </div>

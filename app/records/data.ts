@@ -85,10 +85,6 @@ export type CareerHistoryItem = {
   name: string;
 };
 
-export const recordsLastChecked = {
-  records5000m: "2026/05/23",
-  records10000m: "2026/05/10",
-};
 
 const men5000Source = {
   sourceUrl: "https://genkimanman.com/rekidaikiroku/jpmen5000M100.html",

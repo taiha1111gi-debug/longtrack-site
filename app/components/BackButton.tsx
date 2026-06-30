@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 type BackButtonProps = {
   href: string;
@@ -9,7 +9,7 @@ export function BackButton({ href, label }: BackButtonProps) {
   return (
     <Link
       href={href}
-      className="inline-flex rounded-md bg-slate-900 px-4 py-3 text-sm font-bold text-white hover:bg-slate-700"
+      className="inline-flex rounded-md bg-slate-900 px-3 py-2 text-xs font-bold text-white hover:bg-slate-700 sm:px-4 sm:py-3 sm:text-sm"
     >
       {label}
     </Link>
